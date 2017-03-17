@@ -1,0 +1,506 @@
+body {
+    font-family: 'Cuprum', sans-serif;
+}
+
+.navbar,
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.65);
+    border: none;
+}
+.ab {font-size:20px;}
+
+.nav>li>a,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a,
+.dropdown-menu>li {
+    border-bottom: 3px solid transparent;
+}
+.main-nav .navbar {background: rgb(241, 102, 90); border-radius:0; margin-bottom:0;}
+.main-nav .navbar-collapse {
+    width: 949px;
+    margin: 0 auto;
+}
+.main-nav .container-fluid {padding:0 !important;}
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    border-bottom: 3px solid transparent;
+    background: none;
+}
+
+.navbar a,
+.dropdown-menu>li>a,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    color: #fff;
+}
+
+.phone-backcall {padding-bottom:0 !important;}
+.dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.phone small {color: #fff;}
+.top-social p {color: #fff;}
+
+/*СЛАЙДЕР*/
+
+
+/* Задаем сброс обтекания */
+
+.clear {
+    margin-top: -1px;
+    height: 1px;
+    clear: both;
+    zoom: 1;
+}
+
+
+/* Slider */
+
+.slider {
+    /* Ширина контейнера */
+    width: 100%;
+    margin-top:-1px;
+    /* Внешние тступы сверху и снизу */
+    /* Позиционирование */
+    position: relative;
+}
+.slogan-p {padding-top:28px;}
+.slogan-p p {color:#fff;     font-size: 23px;
+    margin-bottom: 0;}
+.slogan-p small {color:#fff;}
+
+
+/* Двойной клик по кнопкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+
+.slider::-moz-selection {
+    background: transparent;
+    color: #fff;
+    text-shadow: none;
+}
+
+.slider::selection {
+    background: transparent;
+    color: #fff;
+    text-shadow: none;
+}
+
+.slide-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* Скроем то что выходит за границы */
+    overflow: hidden;
+}
+
+.slide-wrap {
+    position: relative;
+    left: 0px;
+    top: 0;
+    /* максимально возможная ширина обертки слайдера */
+    width: 10000000px;
+}
+
+.slide-item {
+    float: left;
+    /*margin-top: -58px;*/
+}
+body > div.slider > div.slide-list > div.slide-wrap > div:nth-child(1) > img {width:100%; max-width:1920px;}
+
+.slider-text {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    top:500px;
+    z-index:99;
+}
+
+.slide-title {
+    /* Шрифт */
+    font: bold 16px monospace;
+    /* Указываем, что элемент блочный */
+    display: block;
+    color:#fff;
+}
+
+
+/* навигация вперед/назад */
+
+.navy {
+    /* абсолютное позиционирование */
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    /* ширина элементов */
+    width: 85px;
+    cursor: pointer;
+}
+
+.prev-slide {
+    left: 0;
+    background: url(../img/prev-s.png) 8px 50% no-repeat;
+}
+
+.next-slide {
+    right: 0;
+    background: url(../img/next-s.png) 0 50% no-repeat;
+}
+
+.navy.disable {
+    background: #dbdbdb;
+}
+
+
+/* навигация старт/пауза */
+
+.auto {
+    width: 7px;
+    height: 11px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.play {
+    background: url(../img/play-s.png) center no-repeat;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+}
+
+.pause {
+    background: url(bg/pause.png) center no-repeat;
+}
+
+.top-social {
+    margin:auto;
+    position:absolute;
+    width:100%;
+    top: 67px
+}
+
+.select-lang {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 489px;
+    background: rgba(0,0,0,0.44);
+}
+.select-lang a {color:#fff;}
+
+.span-lang {
+    display: block;
+    max-width: 55px;
+    text-align: center;
+}
+
+.lang-a {
+    padding-top: 70px;
+    width: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.eng {
+    background: url(../img/eng.png) no-repeat center 0;
+}
+
+.ger {
+    background: url(../img/ger.png) no-repeat center 0;
+}
+
+.france {
+    background: url(../img/france.png) no-repeat center 0;
+}
+
+.spain {
+    background: url(../img/spain.png) no-repeat center 0;
+}
+
+.italy {
+    background: url(../img/italy.png) no-repeat center 0;
+}
+
+.all-language {
+    background: url(../img/all-lang.png) no-repeat center 0;
+}
+
+.vib {
+    margin-bottom: 75px;
+    color:#fff;
+    font-size:16px;
+    padding-left:30px;
+}
+
+.section2 {
+    background-image: url(../img/bg2.png);
+    background-position: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: -1px;
+}
+
+.section2 h2 {
+    color: #f1665a;
+}
+
+.tiz {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.section3 {
+    background-image: url(../img/bg3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.section3 h2 {
+    color: #fff;
+}
+
+.block {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.block h4 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 27px;
+}
+
+.block p {
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.money {
+    font-size: 22px;
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.read_more {
+    text-align: center;
+    font-size: 22px;
+    margin: 30px;
+}
+
+.read_more a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.section4 {
+    background-image: url(../img/bg2.png);
+    background-position: center;
+    padding: 30px 0;
+}
+
+.block_section4 h3 {
+    color: #f1665a;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.block_section4 a p {
+    color: #000;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.block_section4 .img_news {
+    float: left;
+    margin: 2px;
+}
+
+.block_section4 p {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+
+.block_section4_sale h3 {
+    color: #f1665a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+.block_section4_sale img {
+    margin: auto;
+}
+
+footer {
+    background-image: url(../img/bg_footer.png);
+    background-position: center;
+}
+
+footer ul {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_menu ul li {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #000;
+    padding: 10px 30px 20px 0;
+    font-size: 19px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.footer_right ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.phone_number {
+    text-align: center;
+    font-size: 27px;
+    color: #000;
+}
+
+.time {
+    text-align: center;
+    font-size: 13px;
+}
+
+.ring {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.ring a {
+    color: #ef5959;
+    text-decoration: underline;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer ul li{
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 13px;
+
+}
+.red_line{
+    float: right;
+    padding: 10px 0;
+}
+.black_line{
+    float: right;
+}
+
+.copyright {
+    display: inline-block;
+}
+
+.copyright p {
+    display: inline-block;
+    font-size: 13px;
+    padding-right: 80px;}
+
+.copyright a {
+    color: #000;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    
+    .block_section4_sale p{
+        text-align: center;
+    }
+.block{
+       
+       margin: 10px;
+
+    }
+
+.block p  {
+    font-size: 18px;
+   
+
+}
+.block .money  {
+    font-size: 18px;
+    margin: 0;
+
+}
+.block h4  {
+    font-size: 25px;}
+
+
+    footer img{
+        max-width: 40px;
+        }
+
+
+        .footer_menu ul li{
+        font-size: 14px;
+    }
+.block_section4 .black_line{
+max-height: 20px;
+}
+
+footer .red_line{
+  max-height: 20px;  
+}
+.copyright p{
+    text-align: center;
+}
+
+}
+@media screen and (min-device-width: 800px) and (max-device-width: 1200px){
+    .block{
+       height: 270px;
+    }
+    footer img{
+        max-width: 70px;
+        }
+    .footer_menu ul li{
+        font-size: 14px;
+    }
+     .footer_right{
+        text-align: center;
+     }
+
+    }
+}
+

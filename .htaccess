@@ -1,0 +1,23 @@
+##  Can be commented out if causes errors, see notes above.
+Options +FollowSymLinks -Indexes
+#
+#  mod_rewrite in use
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ \/index\.php\ HTTP\/
+RewriteRule ^index\.php$ http:\/\/%{HTTP_HOST}\/ [R=301,QSA,L]
+
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 7 days"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/x-flash-swf "access plus 7 days"
+ExpiresByType text/javascript "access plus 1 week"
+ExpiresByType application/x-javascript "access plus 1 week"
+</IfModule>
+AddDefaultCharset utf-8
